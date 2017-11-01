@@ -1,0 +1,79 @@
+:root {
+  --preto:   #5B5A5A;
+  --cinza:   #C0B7AD;
+  --amarelo: #F6D00A;
+}
+
+body {
+  background: url(../img/wood-bg.jpg) no-repeat;
+  background-size: cover;
+}
+
+/*************************************************/
+
+.mainimage {
+  width: 256px;
+  height: 256px;
+  margin: 0 auto;
+  background: url(../img/avatar.png);
+}
+
+.cabecalho {
+  color: var(--white);
+  padding: 10px 0 10px 0;
+  background-color: var(--preto);
+  border-bottom: 5px solid var(--amarelo);
+}
+
+h1 + h3 {
+  font-weight: 100;
+}
+
+hr {
+  height: 5px;
+  color: var(--amarelo);
+  background-color: var(--amarelo);
+}
+
+/**************************************/
+
+.skills {
+  width: 270px;
+  height: 80px;
+  background: url(../img/skill.png);
+}
+
+.languages {
+  width: 280px;
+  height: 75px;
+  background: url(../img/languages.png);
+}
+
+.sidebar {
+  padding: 0;
+  color: var(--white);
+  background-color: var(--preto);
+}
+
+span {
+  margin-left: 30px;
+}
+
+.progress {
+  border-radius: 0;
+  margin: 0 15px 0 30px;
+}
+
+.progress-bar {
+  background-color: var(--amarelo);
+}
+
+.contact {
+  width: 285px;
+  height: 30px;
+  background: url(../img/contact.png);
+}
+
+.contato {
+  background-color: var(--amarelo);
+}
