@@ -337,3 +337,6 @@ Temos as classes das imagens utilizadas na Barra Central, temos os estilos da _.
 De todos os trechos de código esse é o mais simples. O CSS apenas estiliza a coluna do conteúdo e aplica um estilo específico para o HR. No HTML, temos apenas a declaração da coluna e da classe _.content_ para a estilização e, dentro da div, o conteúdo da página.
 
 ## 7. Criando Repositório e Hospedando no Github Pages
+
+    $ git checkout -b gh-pages
+    $ git rebase gh-pages
