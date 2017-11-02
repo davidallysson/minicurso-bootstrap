@@ -5,15 +5,10 @@
 }
 
 body {
-  background-color: var(--preto);
+  background-color: var(--cinza);
 }
 
-.container {
-  border-left: 1px solid var(--amarelo);
-  border-right: 1px solid var(--amarelo);
-}
-
-/*************************************************/
+/*******  CABEÇALHO  *******/
 
 .mainimage {
   width: 256px;
@@ -33,13 +28,13 @@ h1 + h3 {
   font-weight: 100;
 }
 
-hr {
+.cabecalho hr {
   height: 5px;
   color: var(--amarelo);
   background-color: var(--amarelo);
 }
 
-/**************************************/
+/*******  SIDEBAR  *******/
 
 .skills {
   width: 270px;
@@ -58,7 +53,6 @@ hr {
   height: 30px;
   margin: 0 auto;
   background: url(../img/contact.png);
-  background-color: var(--amarelo);
 }
 
 .sidebar {
@@ -93,7 +87,7 @@ hr {
   margin-bottom: 0;
 }
 
-/****************************************/
+/*******  CENTRALBAR  *******/
 
 .work {
   width: 64px;
@@ -129,7 +123,7 @@ hr {
   padding-right: 50px;
 }
 
-/****************************************/
+/*******  CONTEUDO  *******/
 
 .content {
   padding: 20px;
