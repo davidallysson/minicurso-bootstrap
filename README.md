@@ -4,9 +4,7 @@
 
 Desenvolvimento de Currículum Online para o participante, no formato de Site Responsivo, utilizando o Bootstrap como framework front-end e hospedá-lo no [Github Pages](https://pages.github.com/).
 
-<center>
-  <img src="img/estrutura-da-pagina.jpg" alt="Personal Page" width=400>
-</center>
+<img src="img/estrutura-da-pagina.jpg" alt="Personal Page" width=400>
 
 ## 0. Pré-requisitos para o Minicurso:
 
@@ -339,4 +337,6 @@ De todos os trechos de código esse é o mais simples. O CSS apenas estiliza a c
 ## 7. Criando Repositório e Hospedando no Github Pages
 
     $ git checkout -b gh-pages
-    $ git rebase gh-pages
+    $ git rebase master
+
+Para hospedar nosso _index.html_ dentro do Github Pages precisamos criar um branch chamado 'gh-pages' e depois precisamos atualizá-lo com base no nosso branch central 'master'. É exatamente isso que esses dois comandos fazem. Execute-os dentro do Git Bash e dentro da pasta do projeto (Lembre de executar sem colocar o '$').
