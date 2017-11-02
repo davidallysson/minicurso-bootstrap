@@ -338,7 +338,8 @@ De todos os trechos de código esse é o mais simples. O CSS apenas estiliza a c
 
     $ git checkout -b gh-pages
     $ git rebase master
+    $ git push origin gh-pages
 
-Para hospedar nosso _index.html_ dentro do Github Pages precisamos criar um branch chamado 'gh-pages' e depois precisamos atualizá-lo com base no nosso branch central 'master'. É exatamente isso que esses dois comandos fazem. Execute-os dentro do Git Bash e dentro da pasta do projeto (Lembre de executar sem colocar o '$').
+Para hospedar nosso _index.html_ dentro do Github Pages precisamos criar um branch chamado 'gh-pages' e depois precisamos atualizá-lo com base no nosso branch central 'master'. Por ultimo vamos subir essas atualizações para o repositório. É exatamente isso que esses três comandos fazem. Execute-os dentro do Git Bash e dentro da pasta do projeto (Lembre de executar sem colocar o '$').
 
-Após executar esses comandos, altere algum arquivo e comite as alterações.
+Resultado final: (https://davidallysson.github.io/minicurso-bootstrap/)
