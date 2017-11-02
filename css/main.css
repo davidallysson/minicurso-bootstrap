@@ -1,12 +1,16 @@
 :root {
-  --preto:   #5B5A5A;
-  --cinza:   #C0B7AD;
-  --amarelo: #F6D00A;
+  --preto:   rgb(88, 88, 90);
+  --cinza:   rgb(231, 231, 233);
+  --amarelo: rgb(255, 202, 8);
 }
 
 body {
-  background: url(../img/wood-bg.jpg) no-repeat;
-  background-size: cover;
+  background-color: var(--preto);
+}
+
+.container {
+  border-left: 1px solid var(--amarelo);
+  border-right: 1px solid var(--amarelo);
 }
 
 /*************************************************/
@@ -49,14 +53,23 @@ hr {
   background: url(../img/languages.png);
 }
 
+.contact {
+  width: 285px;
+  height: 30px;
+  margin: 0 auto;
+  background: url(../img/contact.png);
+  background-color: var(--amarelo);
+}
+
 .sidebar {
   padding: 0;
   color: var(--white);
   background-color: var(--preto);
 }
 
-span {
-  margin-left: 30px;
+.sidebar label {
+  margin-bottom: 0;
+  padding-left: 30px;
 }
 
 .progress {
@@ -68,12 +81,64 @@ span {
   background-color: var(--amarelo);
 }
 
-.contact {
-  width: 285px;
-  height: 30px;
-  background: url(../img/contact.png);
+.contato {
+  font-weight: bold;
+  text-align: center;
+  color: var(--preto);
+  background-color: var(--amarelo);
 }
 
-.contato {
-  background-color: var(--amarelo);
+.contato label {
+  padding: 0;
+  margin-bottom: 0;
+}
+
+/****************************************/
+
+.work {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto;
+  background: url(../img/badge-work.png);
+}
+
+.graduate {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto;
+  background: url(../img/badge-graduation.png);
+}
+
+.awards {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto;
+  background: url(../img/badge-awards.png);
+}
+
+.centralbar {
+  padding: 0;
+  color: var(--preto);
+  background-color: var(--cinza);
+}
+
+.centralbar label {
+  margin-bottom: 0;
+  font-weight: bold;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+/****************************************/
+
+.content {
+  padding: 20px;
+  color: var(--preto);
+  background-color: var(--white);
+}
+
+.content hr {
+  height: 2.5px;
+  color: var(--cinza);
+  background-color: var(--cinza);
 }
