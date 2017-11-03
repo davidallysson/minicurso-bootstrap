@@ -44,6 +44,18 @@ h1 + h3 {
   background: url(../img/skill.png);
 }
 
+.languages {
+  width: 280px;
+  height: 75px;
+  background: url(../img/languages.png);
+}
+
+.contact {
+  width: 285px;
+  height: 30px;
+  margin: 0 auto;
+}
+
 .skills label{
   padding-left: 120px !important;
   padding-top: 25px;
@@ -52,24 +64,12 @@ h1 + h3 {
   color: var(--preto);
 }
 
-.languages {
-  width: 280px;
-  height: 75px;
-  background: url(../img/languages.png);
-}
-
 .languages label {
   padding-left: 105px !important;
   padding-top: 20px;
   font-size: 20px;
   font-weight: bold;
   color: var(--preto);
-}
-
-.contact {
-  width: 285px;
-  height: 30px;
-  margin: 0 auto;
 }
 
 .contact div {
