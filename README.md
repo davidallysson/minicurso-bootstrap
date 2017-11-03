@@ -300,7 +300,7 @@ Trocamos as cores da barra de progresso, centralizamos o texto dentro da área d
       <div class="icons"><i class="fa fa-trophy" aria-hidden="true"></i></div>
     </div>
 
-Não temos muito o que comentar aqui. Declaramos a coluna central com o seu grid e temos uma classe específica para estiliza-la: _.centralbar_. As classes _.icons_ servirão para estilizar os ícones da tag <i>. As quebras de linhas são para alinhamento das labels com o texto da coluna de conteúdo que colocaremos mais a frente.
+Não temos muito o que comentar aqui. Declaramos a coluna central com o seu grid e temos uma classe específica para estiliza-la: _.centralbar_. As classes _.icons_ servirão para estilizar os ícones da tag < i >. As quebras de linhas são para alinhamento das labels com o texto da coluna de conteúdo que colocaremos mais a frente.
 
 ### CSS
 
