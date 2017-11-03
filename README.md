@@ -1,5 +1,14 @@
 # Desenvolvendo Sites Responsivos com Bootstrap 4
 
+> * [0. Pré-requisitos para o Minicurso:](#0-pré-requisitos-para-o-minicurso)
+> * [1. Estrutura do HTML](#1-estrutura-do-html)
+> * [2. Criar váriaveis no CSS:](#2-criar-váriaveis-no-css)
+> * [3. Construção do Cabeçalho](#3-construção-do-cabeçalho)
+> * [4. Sidebar (Coluna Lateral)](#4-sidebar-coluna-lateral)
+> * [5. Central Bar (Barra Central)](#5-central-bar-barra-central)
+> * [6. Conteúdo](#6-conteúdo)
+> * [7. Hospedando no Github Pages](#7-hospedando-no-github-pages)
+
 ### Objetivo
 
 Desenvolvimento de Currículum Online para o participante, no formato de Site Responsivo, utilizando o Bootstrap como framework front-end e hospedá-lo no [Github Pages](https://pages.github.com/).
@@ -347,7 +356,7 @@ Temos as classes das imagens utilizadas na Barra Central, temos os estilos da _.
 
 De todos os trechos de código esse é o mais simples. O CSS apenas estiliza a coluna do conteúdo e aplica um estilo específico para o HR. No HTML, temos apenas a declaração da coluna e da classe _.content_ para a estilização e, dentro da div, o conteúdo da página.
 
-## 7. Criando Repositório e Hospedando no Github Pages
+## 7. Hospedando no Github Pages
 
     $ git checkout -b gh-pages
     $ git rebase master
