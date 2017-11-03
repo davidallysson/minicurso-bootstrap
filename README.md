@@ -47,6 +47,7 @@ PS²: Caso seja sua primeira vez no Git Bash, muito provavelmente ele vai querer
 
         <title>Personal Page</title>
         <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/style.css" type="text/css">
       </head>
 
@@ -103,6 +104,8 @@ Declaramos um _.container_ e vamos iniciar a construção do cabeçalho da pági
       width: 256px;
       height: 256px;
       margin: 0 auto;
+      border-radius: 50%;
+      border: 5px solid var(--amarelo);
       background: url(../img/avatar.png);
     }
 
@@ -134,7 +137,9 @@ No CSS inicalmente temos o estilo para a imagem que ficará a esquerda, no cabe�
       <div class="row">
         <!-- SIDEBAR -->
         <div class="col-xl-3 col-lg-4 col-md-12 col-sm-12 sidebar">
-          <div class="skills"></div>
+          <div class="skills">
+            <label>Skill</label>
+          </div>
           <br>
           <label>Skill 01</label><br>
           <div class="progress">
@@ -165,7 +170,9 @@ No CSS inicalmente temos o estilo para a imagem que ficará a esquerda, no cabe�
             <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
           <br>
-          <div class="languages"></div>
+          <div class="languages">
+            <label>Languages</label>
+          </div>
           <br>
           <label>English</label><br>
           <div class="progress">
@@ -180,7 +187,9 @@ No CSS inicalmente temos o estilo para a imagem que ficará a esquerda, no cabe�
             <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
           <br><br><br>
-          <div class="contact"></div>
+          <div class="contact">
+            <div>Contact</div>
+          </div>
           <div class="contato">
             <br><label>+123 456 789</label>
             <br><label>Jhondoepro@freepik.com</label>
@@ -189,7 +198,7 @@ No CSS inicalmente temos o estilo para a imagem que ficará a esquerda, no cabe�
           </div>
         </div>
 
-Declaramos nosso _.container_ para a parte do conteúdo e criamos nossa linha (row). Dentro dela montaremos nosso grid responsivo. A classe _.sidebar_ será responsável por estilizar apenas esta coluna (como fizemos com _.cabecalho_ ). As classes _.skills_, _.languages_ e _.contact_ são responsáveis por exibir imagens específicas das suas seções (veremos elas em ação no CSS). Por fim, declaramos as labels com os conteúdos e as barras de progresso.
+Declaramos nosso _.container_ para a parte do conteúdo e criamos nossa linha (row). Dentro dela montaremos nosso grid responsivo. A classe _.sidebar_ será responsável por estilizar apenas esta coluna (como fizemos com _.cabecalho_ ). As classes _.skills_ e _.languages_ são responsáveis por exibir imagens específicas das suas seções (veremos elas em ação no CSS). A classe _.contact_ é usada apenas para delimitar um espaço para uma outra div. Por fim, declaramos as labels com os conteúdos e as barras de progresso.
 
 ### CSS
 
@@ -198,20 +207,43 @@ Declaramos nosso _.container_ para a parte do conteúdo e criamos nossa linha (r
       height: 80px;
       background: url(../img/skill.png);
     }
-
+    
     .languages {
       width: 280px;
       height: 75px;
       background: url(../img/languages.png);
     }
-
+    
     .contact {
       width: 285px;
       height: 30px;
       margin: 0 auto;
-      background: url(../img/contact.png);
     }
-
+    
+    .skills label{
+      padding-left: 120px !important;
+      padding-top: 25px;
+      font-weight: bold;
+      font-size: 20px;
+      color: var(--preto);
+    }
+    
+    .languages label {
+      padding-left: 105px !important;
+      padding-top: 20px;
+      font-size: 20px;
+      font-weight: bold;
+      color: var(--preto);
+    }
+    
+    .contact div {
+      background: var(--preto);
+      color: var(--cinza);
+      border-radius: 0px 0px 50px 50px;
+      margin: 0px 50px 0px 50px;
+      font-size: 20px;
+     }
+        
     .sidebar {
       padding: 0;
       color: var(--white);
@@ -244,7 +276,7 @@ Declaramos nosso _.container_ para a parte do conteúdo e criamos nossa linha (r
       margin-bottom: 0;
     }
 
-As três primeiras classes são as citadas anteriormente. Sua função é apenas a de mostrar as imagens. Em _.contact_ temos apenas o adicional de centralizar a imagem em relação a coluna utilizando as margins automáticas para left e right.
+As duas primeiras classes são as citadas anteriormente. Sua função é apenas a de mostrar as imagens. Já conteúdo dessas duas duas classes são estilizados em _.skills label_ e _.languages label_, para que o texto se encaixe com as imagens. Em _.contact_ temos a delimitação do espaço para a div que está dentro dela, que é estilizada em _.contact div_ para ter as bordas de baixo arredondadas.
 
 Além disso temos os estilos específicos para a Barra Lateral, um padding-left para as labels ficarem mais distantes da margem a esquerda, retiramos o arredondamento de bordas das barras de progresso e colocamos uma margem para que elas ficassem mais ao centro.
 
@@ -257,40 +289,31 @@ Trocamos as cores da barra de progresso, centralizamos o texto dentro da área d
     <!-- CENTRAL BAR -->
     <div class="col-xl-2 col-lg-2 col-md-3 col-sm-3 col-3 centralbar">
       <br>
-      <div class="work"></div><br>
+      <div class="icons"><i class="fa fa-briefcase" aria-hidden="true"></i></div><br>
       <label>2013 - 2014</label>
       <br><br><br><br><br><br><br>
       <label>2015 - 2017</label>
       <br><br><br><br><br><br><br>
-      <div class="graduate"></div><br>
+      <div class="icons"><i class="fa fa-graduation-cap" aria-hidden="true"></i></div><br>
       <label>2007 - 2010</label>
       <br><br><br><br><br><br><br>
-      <div class="awards"></div>
+      <div class="icons"><i class="fa fa-trophy" aria-hidden="true"></i></div>
     </div>
 
-Não temos muito o que comentar aqui. Declaramos a coluna central com o seu grid e temos uma classe específica para estiliza-la: _.centralbar_. As classes _.work_, _.graduate_ e _.awards_ servirão para exibir as imagens dessa seção do site. As quebras de linhas são para alinhamento das labels com o texto da coluna de conteúdo que colocaremos mais a frente.
+Não temos muito o que comentar aqui. Declaramos a coluna central com o seu grid e temos uma classe específica para estiliza-la: _.centralbar_. As classes _.icons_ servirão para estilizar os ícones da tag <i>. As quebras de linhas são para alinhamento das labels com o texto da coluna de conteúdo que colocaremos mais a frente.
 
 ### CSS
 
-    .work {
+    .icons {
       width: 64px;
       height: 64px;
       margin: 0 auto;
-      background: url(../img/badge-work.png);
-    }
-
-    .graduate {
-      width: 64px;
-      height: 64px;
-      margin: 0 auto;
-      background: url(../img/badge-graduation.png);
-    }
-
-    .awards {
-      width: 64px;
-      height: 64px;
-      margin: 0 auto;
-      background: url(../img/badge-awards.png);
+      text-align: center;
+      font-size: 30px;
+      color: var(--cinza);
+      background: var(--preto);
+      border-radius: 50%;
+      padding: 10px;
     }
 
     .centralbar {
@@ -306,7 +329,7 @@ Não temos muito o que comentar aqui. Declaramos a coluna central com o seu grid
       padding-right: 50px;
     }
 
-Temos as classes das imagens utilizadas na Barra Central, temos os estilos da _.centralbar_ e das labels. O padding está sendo utilizado para centralizar as labels em relação a coluna.
+Temos a classe dos ícones utilizadas na Barra Central, temos os estilos da _.centralbar_ e das labels. O padding está sendo utilizado para centralizar as labels em relação a coluna.
 
 ## 6. Conteúdo
 
