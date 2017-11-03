@@ -4,13 +4,26 @@
 
 Desenvolvimento de Currículum Online para o participante, no formato de Site Responsivo, utilizando o Bootstrap como framework front-end e hospedá-lo no [Github Pages](https://pages.github.com/).
 
-<img src="img/estrutura-da-pagina.jpg" alt="Personal Page" width=400>
+<img src="img/estrutura-da-pagina.jpg" alt="Personal Page" width=500>
+
+Página de Exemplo: (https://davidallysson.github.io/minicurso-bootstrap/)
 
 ## 0. Pré-requisitos para o Minicurso:
 
 1. Criar uma conta no [Github](https://github.com).
-2. Dê um fork neste repositório e clone o fork.
-3. Crie um arquivo _index.html_ na raiz do projeto e vamos começar.
+2. Crie um repositório com o nome no formato _username_.github.io, onde "_username_" é o seu nome de usuário do Github.
+3. Crie uma pasta no seu computador com o nome do repositório e crie um arquivo _index.html_ na raiz do projeto
+4. Execute:
+
+        git init
+        git add index.html
+        git commit -m "first commit"
+        git remote add origin https://github.com/username/username.github.io.git
+        git push -u origin master
+
+PS: Lembre-se de substituir "username" pelo seu nome de usuário do Github.
+
+PS²: Caso seja sua primeira vez no Git Bash, muito provavelmente ele vai querer fazer algumas configurações antes de você executar qualquer comando. Faça as devidas configurações e só depois execute os comandos acima.
 
 ## 1. Estrutura do HTML
 
@@ -341,5 +354,3 @@ De todos os trechos de código esse é o mais simples. O CSS apenas estiliza a c
     $ git push origin gh-pages
 
 Para hospedar nosso _index.html_ dentro do Github Pages precisamos criar um branch chamado 'gh-pages' e depois precisamos atualizá-lo com base no nosso branch central 'master'. Por ultimo vamos subir essas atualizações para o repositório. É exatamente isso que esses três comandos fazem. Execute-os dentro do Git Bash e dentro da pasta do projeto (Lembre de executar sem colocar o '$').
-
-Resultado final: (https://davidallysson.github.io/minicurso-bootstrap/)
