@@ -14,6 +14,8 @@ body {
   width: 256px;
   height: 256px;
   margin: 0 auto;
+  border-radius: 50%;
+  border: 5px solid var(--amarelo);
   background: url(../img/avatar.png);
 }
 
@@ -42,17 +44,40 @@ h1 + h3 {
   background: url(../img/skill.png);
 }
 
+.skills label{
+  padding-left: 120px !important;
+  padding-top: 25px;
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--preto);
+}
+
 .languages {
   width: 280px;
   height: 75px;
   background: url(../img/languages.png);
 }
 
+.languages label {
+  padding-left: 105px !important;
+  padding-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--preto);
+}
+
 .contact {
   width: 285px;
   height: 30px;
   margin: 0 auto;
-  background: url(../img/contact.png);
+}
+
+.contact div {
+  background: var(--preto);
+  color: var(--cinza);
+  border-radius: 0px 0px 50px 50px;
+  margin: 0px 50px 0px 50px;
+  font-size: 20px;
 }
 
 .sidebar {
@@ -89,25 +114,16 @@ h1 + h3 {
 
 /*******  CENTRALBAR  *******/
 
-.work {
+.icons {
   width: 64px;
   height: 64px;
   margin: 0 auto;
-  background: url(../img/badge-work.png);
-}
-
-.graduate {
-  width: 64px;
-  height: 64px;
-  margin: 0 auto;
-  background: url(../img/badge-graduation.png);
-}
-
-.awards {
-  width: 64px;
-  height: 64px;
-  margin: 0 auto;
-  background: url(../img/badge-awards.png);
+  text-align: center;
+  font-size: 30px;
+  color: var(--cinza);
+  background: var(--preto);
+  border-radius: 50%;
+  padding: 10px;
 }
 
 .centralbar {
