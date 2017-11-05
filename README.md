@@ -207,19 +207,19 @@ Declaramos nosso _.container_ para a parte do conteúdo e criamos nossa linha (r
       height: 80px;
       background: url(../img/skill.png);
     }
-    
+
     .languages {
       width: 280px;
       height: 75px;
       background: url(../img/languages.png);
     }
-    
+
     .contact {
       width: 285px;
       height: 30px;
       margin: 0 auto;
     }
-    
+
     .skills label{
       padding-left: 120px !important;
       padding-top: 25px;
@@ -227,7 +227,7 @@ Declaramos nosso _.container_ para a parte do conteúdo e criamos nossa linha (r
       font-size: 20px;
       color: var(--preto);
     }
-    
+
     .languages label {
       padding-left: 105px !important;
       padding-top: 20px;
@@ -235,7 +235,7 @@ Declaramos nosso _.container_ para a parte do conteúdo e criamos nossa linha (r
       font-weight: bold;
       color: var(--preto);
     }
-    
+
     .contact div {
       background: var(--preto);
       color: var(--cinza);
@@ -243,7 +243,7 @@ Declaramos nosso _.container_ para a parte do conteúdo e criamos nossa linha (r
       margin: 0px 50px 0px 50px;
       font-size: 20px;
      }
-        
+
     .sidebar {
       padding: 0;
       color: var(--white);
@@ -276,7 +276,7 @@ Declaramos nosso _.container_ para a parte do conteúdo e criamos nossa linha (r
       margin-bottom: 0;
     }
 
-As duas primeiras classes são as citadas anteriormente. Sua função é apenas a de mostrar as imagens. Já conteúdo dessas duas duas classes são estilizados em _.skills label_ e _.languages label_, para que o texto se encaixe com as imagens. Em _.contact_ temos a delimitação do espaço para a div que está dentro dela, que é estilizada em _.contact div_ para ter as bordas de baixo arredondadas.
+As duas primeiras classes são as citadas anteriormente. Sua função é apenas a de mostrar as imagens. Já conteúdo dessas duas classes são estilizados em _.skills label_ e _.languages label_, para que o texto se encaixe com as imagens. Em _.contact_ temos a delimitação do espaço para a div que está dentro dela, que é estilizada em _.contact div_ para ter as bordas de baixo arredondadas.
 
 Além disso temos os estilos específicos para a Barra Lateral, um padding-left para as labels ficarem mais distantes da margem a esquerda, retiramos o arredondamento de bordas das barras de progresso e colocamos uma margem para que elas ficassem mais ao centro.
 
