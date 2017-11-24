@@ -25,7 +25,7 @@ Página de Exemplo: (https://davidallysson.github.io/minicurso-bootstrap/)
 4. Execute:
 
         git init
-        git add index.html
+        git add .
         git commit -m "first commit"
         git remote add origin https://github.com/username/username.github.io.git
         git push -u origin master
@@ -187,8 +187,10 @@ No CSS inicalmente temos o estilo para a imagem que ficará a esquerda, no cabe�
             <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
           <br><br><br>
-          <div class="contact">
-            <div>Contact</div>
+          <div class="contato">
+            <div class="contact">
+              <div>Contact</div>
+            </div>
           </div>
           <div class="contato">
             <br><label>+123 456 789</label>
@@ -379,10 +381,14 @@ Temos a classe dos ícones utilizadas na Barra Central, temos os estilos da _.ce
 
 De todos os trechos de código esse é o mais simples. O CSS apenas estiliza a coluna do conteúdo e aplica um estilo específico para o HR. No HTML, temos apenas a declaração da coluna e da classe _.content_ para a estilização e, dentro da div, o conteúdo da página.
 
-## 7. Hospedando no Github Pages
+## 7. Hospedando no Github Pages caso você já possua o repositório "username.github.io" em uso (Opcional)
 
     $ git checkout -b gh-pages
     $ git rebase master
     $ git push origin gh-pages
 
 Para hospedar nosso _index.html_ dentro do Github Pages precisamos criar um branch chamado 'gh-pages' e depois precisamos atualizá-lo com base no nosso branch central 'master'. Por ultimo vamos subir essas atualizações para o repositório. É exatamente isso que esses três comandos fazem. Execute-os dentro do Git Bash e dentro da pasta do projeto (Lembre de executar sem colocar o '$').
+
+## Alguns exemplos de alunos do minicurso:
+
+(https://mizaelarthur.github.io/)
